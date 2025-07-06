@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it new year?</title>
+</head>
+<body>
+    <h1>{{ greeting }}</h1>
+    <p>Current time: {{ current_time }}</p>
+    {% if current_time.month == 1 and current_time.day == 1 %}
+        <p>It's New Year's Day!</p>
+    {% else %}
+        <p>It's not New Year's Day.</p>
+    {% endif %} 
+</body>
+</html>
